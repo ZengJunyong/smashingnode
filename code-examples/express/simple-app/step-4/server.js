@@ -2,23 +2,23 @@
 /**
  * Module requirements.
  */
-
+var path = require('path');
 var express = require('express')
-  , search = require('./search')
+  //, search = require('./search')
 
 /**
  * Create app.
  */
 
-var app = express.createServer() // NOTE: express3 is express()
+var app = express()
 
 /**
  * Configuration
  */
 
+// view engine setup
 app.set('view engine', 'ejs');
-app.set('views', __dirname + '/views');
-app.set('view options', { layout: false }); // NOTE: express3 remove
+app.set('views', path.join(__dirname, 'views'));
 
 /**
  * Routes

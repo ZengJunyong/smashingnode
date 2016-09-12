@@ -1,5 +1,5 @@
 killall node
-node --debug-brk=5858 /Users/junyong/learn/smashingnode/code-examples/introduction/my-web-server.js &
+node --debug-brk=5858 /Users/junyong/learn/smashingnode/code-examples/express/simple-app/step-5/server.js &
 node-inspector &
 sleep 3
 open http://127.0.0.1:8080/?ws=127.0.0.1:8080&port=5858
