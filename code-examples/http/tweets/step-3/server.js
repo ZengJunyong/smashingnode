@@ -2,6 +2,8 @@
 var qs = require('querystring');
 
 require('http').createServer(function (req, res) {
+  console.log(req.headers);
+
   var body = '';
 
   req.on('data', function (chunk) {

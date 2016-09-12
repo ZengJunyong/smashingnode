@@ -21,10 +21,11 @@ http.request({
   });
   res.on('end', function () {
     var obj = JSON.parse(body);
-    obj.results.forEach(function (tweet) {
-      console.log('  \033[90m' + tweet.text + '\033[39m');
-      console.log('  \033[94m' + tweet.from_user + '\033[39m');
-      console.log('--');
-    });
+    console.log(obj);
+    //obj.results.forEach(function (tweet) {
+    //  console.log('  \033[90m' + tweet.text + '\033[39m');
+    //  console.log('  \033[94m' + tweet.from_user + '\033[39m');
+    //  console.log('--');
+    //});
   });
 }).end()
