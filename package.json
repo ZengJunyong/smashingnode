@@ -12,6 +12,7 @@
   "author": "Yong",
   "license": "ISC",
   "dependencies": {
-    "colors": "^1.1.2"
+    "colors": "^1.1.2",
+    "connect": "^3.5.0"
   }
 }
